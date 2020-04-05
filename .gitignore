@@ -1,0 +1,5 @@
+# Игнорируемые Git-ом файлы для проекта Front-Project-Template
+node_modules/
+package-lock.json
+build/**/
+!build/README.md
