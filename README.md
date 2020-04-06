@@ -19,7 +19,7 @@ This is the repository of the project template for web-front-end development.
     $ npm i
     ```
     To execute this command, node.js and gulp must be installed globally.
-5. Run:
+5. Run the command:
     ```
     $ gulp
     ```
