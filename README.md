@@ -4,7 +4,7 @@ This is the repository of the project template for web-front-end development.
 ## Install
 
 1. Create folder for new project.
-2. In the terminal, run uhe following command:
+2. In the terminal, run the following command:
     ```
     $ git clone https://github.com/RZ3DDD/front-project-template <new_project_full_path>
     ```
@@ -14,7 +14,7 @@ This is the repository of the project template for web-front-end development.
     $ rm .gitignore
     ```
     If necessary, then later organize the version control as usual.
-4. Run command:
+4. Run the command:
     ```
     $ npm i
     ```
