@@ -1,6 +1,7 @@
 # Template for web-front-end development projects
 This is the repository of the project template for web-front-end development.
 
+---
 ## Install
 
 1. Create folder for new project.
@@ -25,3 +26,4 @@ This is the repository of the project template for web-front-end development.
     ```
     The browser should open the welcome page for a new project. 
 6. Work on a new project with pleasure.
+---
