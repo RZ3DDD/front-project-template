@@ -14,7 +14,7 @@ This is the repository of the project template for web-front-end development.
     $ rm .gitignore
     ```
     If necessary, then later organize the version control as usual.
-4. Run:
+4. Run command:
     ```
     $ npm i
     ```
