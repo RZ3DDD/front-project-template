@@ -82,7 +82,7 @@ function scripts() {
 
 // Private task сжатия изображений
 function imgCompress() {
-    return src('./src/img/**')
+    return src(['./src/img/**', '!./src/img/README.md'])
         .pipe(imagemin({
             progressive: true
         }))
@@ -92,21 +92,18 @@ function imgCompress() {
 // Private task очистки папки build
 function clean() {
     return del(['./build/**/*']);
-}
-
-// Private task наблюдения за изменеями в файлах
-function overwatch() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-    watch('./src/img/**', imgCompress); // Следить за изображениями
-    watch('./src/css/**/*.css', styles); // Следить за CSS файлами
-    watch('./src/sass/**/*.scss', styles); // Следить за CSS файлами
-    watch('./src/sass/**/*.sass', styles); // Следить за CSS файлами
-    watch('./src/js/**/*.js', scripts); // Следить за JS файлами
-    watch('./*.html').on('change', browserSync.reload); // Следить за изменением HTML файлов
+} // Private task наблюдения за изменеями в файлах function overwatch() {
+browserSync.init({
+    server: {
+        baseDir: "./"
+    }
+});
+watch('./src/img/**', imgCompress); // Следить за изображениями
+watch('./src/css/**/*.css', styles); // Следить за CSS файлами
+watch('./src/sass/**/*.scss', styles); // Следить за CSS файлами
+watch('./src/sass/**/*.sass', styles); // Следить за CSS файлами
+watch('./src/js/**/*.js', scripts); // Следить за JS файлами
+watch('./*.html').on('change', browserSync.reload); // Следить за изменением HTML файлов
 }
 
 // Public tasks
